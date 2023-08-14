@@ -1,6 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-// import { Observable } from 'rxjs';
-// import { map } from 'rxjs/operators'
 
 import { Collection, Feature, Overlay, Map, View } from 'ol';
 import { toLonLat, transform, fromLonLat } from 'ol/proj';
@@ -99,7 +97,7 @@ export class AppComponent implements OnInit {
           this.map.setView(
             new View({
               center: fromLonLat([this.taxiDriverFollowed.lon, this.taxiDriverFollowed.lat]),
-              zoom: 18,
+              zoom: 16,
             })
           )
         }
