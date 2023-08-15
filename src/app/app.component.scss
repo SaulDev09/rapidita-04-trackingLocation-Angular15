@@ -1,6 +1,7 @@
 :host {
     display: flex;
     flex-direction: column;
+    // height: calc(100vh - 56px);
     height: 100vh;
 }
 
@@ -25,10 +26,11 @@ main {
 
 .map-container {
     flex-grow: 1;
-    height: 600px;
+    height: calc(100vh - 110px);
 }
 
 footer {
     background-color: var(--header-color);
     padding: 1em;
 }
+

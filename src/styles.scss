@@ -8,4 +8,12 @@ body {
     --header-color: #D1DFB7;
     --sidebar-color: #FAE6BE;
     --text-color: black;
+    background-image: url("../src/assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+h3 {
+    color: white;
+    font-weight: bolder;
 }

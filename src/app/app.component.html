@@ -1,9 +1,9 @@
 <nav class="navbar navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Drivers</a>
+  <a class="navbar-brand" href="#">...:: Tracking Drivers ::... </a>
 </nav>
-<div class="row pad-10">
+<div class="row pad-10 mr-0 ml-1">
   <div class="col-8">
-    <h3>Map <small *ngIf="taxiDriverFollowed">Following: {{ taxiDriverFollowed.name }}</small> </h3>
+    <h3>Map <small class="float-right" *ngIf="taxiDriverFollowed">Following: {{ taxiDriverFollowed.name }}</small> </h3>
     <main>
       <div id="ol-map" class="map-container"></div>
     </main>
@@ -17,7 +17,7 @@
       </a>
       <br>
       <button *ngIf="taxiDriverFollowed" (click)="stopFollow()" class="btn btn-primary btn-block">
-        Dejar de seguir
+        Stop Tracking
       </button>
     </div>
   </div>

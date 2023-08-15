@@ -1,27 +1,56 @@
-# OpenlayersAngular
+# Rapidita Tracking Location with Firebase Angular / Ionic
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.4.
+<p align="center">  
+    <img src="https://github.com/SaulDev09/rapidita-03-DayNightEffectReact18/assets/54446713/3bf39dd0-c39e-42f5-8016-d128325df2e9"
+</p>
 
-## Development server
+# Angular:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Steps
 
-## Code scaffolding
+1. Download the project
+2. Use node 14.20 (nvm use v14.20.0)
+3. Install Dependencies: npm i
+4. Run the project: ng s
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Repo:
 
-## Build
+https://github.com/SaulDev09/rapidita-04-trackingLocation-Angular15/blob/main/README.md
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Demo:
 
-## Running unit tests
+https://3yc5v8-4200.csb.app/
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## CodeSandbox:
 
-## Running end-to-end tests
+https://codesandbox.io/p/github/SaulDev09/rapidita-04-trackingLocation-Angular15
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+# Ionic:
 
-## Further help
+## Steps
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Download the project
+2. Use node 16.20 (nvm use v16.20.0)
+3. Install Dependencies: npm i
+4. Run the project: ionic serve
+
+To create Android project, commands:
+1. npx cap add android
+2. npx cap open android
+
+Check Permissions, Manifest:
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-feature android:name="android.hardware.location.gps" />
+
+## Repo:
+
+https://github.com/SaulDev09/rapidita-04-trackinglocation-Ionic7/blob/main/readme.md
+
+## Demo:
+
+https://d4952m-4200.csb.app/map
+
+## CodeSandbox:
+
+https://codesandbox.io/p/github/SaulDev09/rapidita-04-trackinglocation-Ionic7
