@@ -1,7 +1,7 @@
 # Rapidita Tracking Location with Firebase Angular / Ionic
 
 <p align="center">  
-    <img src="https://github.com/SaulDev09/rapidita-03-DayNightEffectReact18/assets/54446713/3bf39dd0-c39e-42f5-8016-d128325df2e9"
+<img src="https://github.com/SaulDev09/rapidita-04-trackingLocation-Angular15/assets/54446713/503da0c9-7d6e-4b1f-9865-a32f26fe0be6"
 </p>
 
 # Angular:
