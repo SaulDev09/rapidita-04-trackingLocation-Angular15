@@ -38,6 +38,7 @@ export class AppComponent implements OnInit {
 
   public taxiDrivers: TaxiDriver[] = [];
   public taxiDriverFollowed: TaxiDriver | null = null;
+  private firstTrack: boolean = false;
 
   constructor(
     private trackService: TrackService
@@ -97,9 +98,10 @@ export class AppComponent implements OnInit {
           this.map.setView(
             new View({
               center: fromLonLat([this.taxiDriverFollowed.lon, this.taxiDriverFollowed.lat]),
-              zoom: 16,
+              zoom: this.firstTrack ? 16 : this.map.getView().getZoom(),
             })
           )
+          this.firstTrack = false;
         }
       });
     }
@@ -107,11 +109,12 @@ export class AppComponent implements OnInit {
 
   startFollow(taxiDriver: TaxiDriver) {
     this.taxiDriverFollowed = taxiDriver;
+    this.firstTrack = true;
 
     this.map.setView(
       new View({
         center: fromLonLat([this.taxiDriverFollowed.lon, this.taxiDriverFollowed.lat]),
-        zoom: 18,
+        zoom: 16,
       })
     );
   }
